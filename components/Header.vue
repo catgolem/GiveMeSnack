@@ -1,9 +1,9 @@
 <template>
-    <div>
-        <header class="text-black">
-          <h1 class="title">GiveMeSnack</h1>
-          <nav class="nav" v-if = this.work.situation >勤務中</nav>
-          <nav class="nav" v-else>休憩中</nav>
+    <div class="shadow">
+        <header class="border-b-2 border-gray-400 py-2 text-black font-bold flex justify-between">
+          <h1 class="title pl-10">GiveMeSnack</h1>
+          <nav class="nav pr-10" v-if = this.work.situation >勤務中</nav>
+          <nav class="nav pr-10" v-else>休憩中</nav>
         </header>
     </div>
 </template>
@@ -42,21 +42,9 @@ export default {
 </script>
 
 <style>
-header {
-  display: flex;
+.header {
   width: 100%;
-  height: 100px;
   background-color: white;
-  align-items: center;
-}
- 
-.title {
-  margin:5%
-}
-
-.nav {
-  margin:10%;
-
 }
  
 .menu-item {
