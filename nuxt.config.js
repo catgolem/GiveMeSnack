@@ -57,6 +57,10 @@ export default {
       Courgette: true,
 
       Ubuntu: true,
+
+      KosugiMaru:true,
+
+      HachiMaruPop : true,
     }
   }
 }

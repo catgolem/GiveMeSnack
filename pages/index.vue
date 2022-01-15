@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="home-background pb-12 font-new">
     <Header/>
     <SnackView/>
-    <Snack-data/>
+    <Snack-data class="text-shadow-sm"/>
   </div>
 </template>
 
@@ -20,3 +20,9 @@ export default {
   name: 'IndexPage'
 }
 </script>
+
+<style>
+.home-background{
+  background: repeating-linear-gradient(-45deg, #d0546a22, #d0546a22 40px, #d0546a 40px, #d0546a 80px);
+}
+</style>
