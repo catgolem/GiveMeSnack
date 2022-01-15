@@ -12,7 +12,7 @@
     </div>
 </template>
 <script>
-import EvaluetionSnack from '/home/ankon/git/GiveMeSnack/components/EvaluetionSnack.vue';
+import EvaluetionSnack from '../components/EvaluetionSnack.vue';
 export default {
   components: { 
     EvaluetionSnack
