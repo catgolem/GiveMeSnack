@@ -1,5 +1,5 @@
 <template>
-  <div class="w-3/4 mx-auto py-4">
+  <div class=" shadow-xl mt-10 w-3/4 mx-auto py-4 background-white">
     <div class="next-duty-container p-4">
       <div class="next-duty leading-8">
         <span class="next-duty-text align-top">次の当番</span>
@@ -20,8 +20,8 @@
               ＋提案
             </div>
             <form class="snack-vote-add-content" action="#" method="post">
-              <input class="p-2 border-2 rounded" type="text"  placeholder="入力">
-              <input class="px-4 py-2 border-2 rounded" type="submit" value="追加">
+              <input class="p-2 border-2 rounded shadow" type="text"  placeholder="入力">
+              <input class="px-4 py-2 border-2 rounded shadow" type="submit" value="追加">
             </form>
           </div>
           <div id="snack-vote-element" class="snack-vote-element">
@@ -131,3 +131,15 @@
     </div>
   </div>
 </template>
+<style>
+.background-white{
+  border-radius: 20px;
+  background: #f3f3f3;
+  box-sizing: border-box;
+  border: solid 24px #e0e0e0;
+  border-top: solid 24px #ccc;
+  border-bottom: solid 24px #fff;
+
+
+}
+</style>
