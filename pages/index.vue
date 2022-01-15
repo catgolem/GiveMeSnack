@@ -1,8 +1,7 @@
 <template>
-  <div>
-    <Header/>
-    <Tutorial/>
-  </div>
+  <SnackView/>
+  <Header/>
+
 </template>
 
 <script>
