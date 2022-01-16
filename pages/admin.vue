@@ -1,15 +1,15 @@
 <template>
-    <div>
+    <div class="background-rd">
         <Header/>
-        <div class="submit m-16">
+        <div class="submit m-16 mt-0">
             <div class="left p-12 mx-16" >
-                <h1 class="mt-10 font-black text-2xl">今週買ったお菓子</h1>
+                <h1 class="mt-10 mt-0 font-black text-2xl">今週買ったお菓子</h1>
                 <h2 class="h2 mt-6"> 
-                    <input type="text" autocomplete="on" v-model="snack_name" class="shadow-md rounded-lg h21 pl-2 py-1 w-44" placeholder="入力"/>
-                    <button class="shadow-md ml-3 rounded-lg text-white bg-gray-400 p-1" @click="postSnack()">追加</button>
+                    <input style="background: rgb(252 222 108)" type="text" autocomplete="on" v-model="snack_name" class="text-2xl font-black shadow-md rounded h21 pl-2 py-1 w-44" placeholder="入力"/>
+                    <button class="shadow-md ml-3 rounded-lg text-white bg-choco p-1" @click="postSnack()">追加</button>
                 </h2>
             </div>
-            <div class="right bg-gray-200 rounded-lg py-5 px-5 shadow-md text-xl">
+            <div class="right background-white rounded-lg py-5 px-5 shadow-md text-xl">
                 <div class="flex">
                     <div class="border-b-2 border-gray-400 inline">当番表</div>
                     <div class="ml-5">今週の当番は</div>
@@ -82,4 +82,16 @@ export default{
 .button{
     text-align: center;
 }
+.background-rd {
+    background: repeating-linear-gradient(-45deg, #d0546a22, #d0546a22 40px, #d0546a 40px, #d0546a 80px);
+    min-height: 100vh;
+}
+.background-white{
+  border-radius: 20px;
+  background: #f3f3f3;
+  box-sizing: border-box;
+  border: solid 24px #e0e0e0;
+  border-top: solid 24px #ccc;
+  border-bottom: solid 24px #fff;
+} 
 </style>
