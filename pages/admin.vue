@@ -1,20 +1,20 @@
 <template>
-  <div>
-    <Header/>
-    <nuxt-link to="/" class="admin-link ml-8">
-        <span class="edit-icon" style="display:inline-block; width:2rem; height:2rem;">
-            <img src="../assets/photo/round_keyboard_return_black_24dp.png" alt="" class="p-2" style="width: 2rem; height: 2rem;">
-        </span>
-        <span class="admin-link-text align-top pr-2">戻る</span>
-    </nuxt-link>
-    <div class="submit">
-        <div class="left ml-16" >
-            <h1 class="mt-10 font-black text-2xl">今週買ったお菓子</h1>
-            <h2 class="h2 mt-6"> 
-                <input type="text" autocomplete="on" v-model="snack_name" class="shadow-md rounded-lg h21 pl-2 py-1 w-44" placeholder="入力"/>
-                <button class="shadow-md ml-3 rounded-lg text-white bg-gray-400 p-1" @click="postSnack()">追加</button>
-            </h2>
-            <div class="added-snacks mt-8 ml-2">
+    <div class="background-rd">
+        <Header/>
+        <nuxt-link to="/" class="admin-link ml-8">
+            <span class="edit-icon" style="display:inline-block; width:2rem; height:2rem;">
+                <img src="../assets/photo/round_keyboard_return_black_24dp.png" alt="" class="p-2" style="width: 2rem; height: 2rem;">
+            </span>
+            <span class="admin-link-text align-top pr-2 font-black">戻る</span>
+        </nuxt-link>
+        <div class="submit flex justify-center">
+            <div class="left ml-16" >
+                <h1 class="mt-10 font-black text-2xl">今週買ったお菓子</h1>
+                <h2 class="h2 mt-6"> 
+                    <input type="text" autocomplete="on" v-model="snack_name" class="shadow-md rounded-lg h21 pl-2 py-1 w-44" placeholder="入力"/>
+                    <button class="shadow-md ml-3 rounded-lg text-white bg-gray-400 p-1" @click="postSnack()">追加</button>
+                </h2>
+                <div class="added-snacks mt-8 ml-2">
                     <div class="added-snacks-title font-black text-lg mb-2">
                         登録済み
                     </div>
@@ -40,39 +40,46 @@
                             </div>
                         </div>
                     </div>
-            </div>
-        </div>
-        <div class="right ml-10 mr-16 mt-12 mb-5 bg-gray-200 p-3 rounded-lg w-80 shadow-md">
-            <div>
-                <h11 class="border-b-2 border-gray-400">当番表</h11>
-                <h12 class="ml-5">今週の当番は</h12>
-            </div>
-            <div class="m-7">
-                    <div class="ml-5">
-                    <div class="mb-3">１．イヌさん</div>
-                    <div class="mb-3">２．ハトさん</div>
-                    <div class="mb-3">３．ネコさん</div>
-                    <div class="mb-3">４．ドジョウさん</div>
-                    <div class="mb-3">５．ヤギさん</div>
-                    <div class="mb-3">６．フライゴンさん</div>
                 </div>
-                <div class="text-center">
-                    <button class="shadow-md bg-white rounded-full text-black mx-auton">編集</button>
+            </div>
+            <div class="right background-white rounded-lg py-5 px-5 shadow-md text-xl ml-8">
+                <div class="flex">
+                    <div class="border-b-2 border-gray-400 inline">当番表</div>
+                    <div class="ml-5">今週の当番は</div>
+                </div>
+                <div class="m-7">
+                        <div class="ml-5">
+                        <div class="mb-3">１．イヌさん</div>
+                        <div class="mb-3">２．ハトさん</div>
+                        <div class="mb-3">３．ネコさん</div>
+                        <div class="mb-3">４．ドジョウさん</div>
+                        <div class="mb-3">５．ヤギさん</div>
+                        <div class="mb-3">６．フライゴンさん</div>
+                    </div>
+                    <div class="text-center">
+                        <button class="shadow-md bg-white rounded-full text-black mx-auto px-5" @click="show=true">編集</button>
+                        <FormMember @closeModal="show=false" v-if="show"/>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-  </div>
 </template>
 
 <script>
 import Header from '../components/Header.vue'
+import FormMember from '../components/FormMember.vue'
+
 export default{
-    components: { Header },
+    components: { 
+        Header,
+        FormMember 
+    },
     data(){
         return{
             snack_name:'',
-            name: 'IndexPage'
+            name: 'IndexPage',
+            show: false,
         }
     },
     methods: {
@@ -86,6 +93,12 @@ export default{
 </script>
 
 <style>
+.right{
+    width: 50%;
+}
+.left{
+    width: calc(100%-612px);
+}
 .h2{
     font-size: 1em;
 }
@@ -95,10 +108,23 @@ export default{
     border: solid;
 }
 .submit{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 .button{
     text-align: center;
 }
+.background-rd {
+    background: repeating-linear-gradient(-45deg, #d0546a22, #d0546a22 40px, #d0546a 40px, #d0546a 80px);
+    min-height: 100vh;
+}
+.background-white{
+  border-radius: 20px;
+  background: #f3f3f3;
+  box-sizing: border-box;
+  border: solid 24px #e0e0e0;
+  border-top: solid 24px #ccc;
+  border-bottom: solid 24px #fff;
+} 
 </style>
