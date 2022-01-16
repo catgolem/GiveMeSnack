@@ -15,7 +15,7 @@ export default {
   components: { 
     Header,
     SnackView ,
-    SnackData,
+    SnackData
   },
   name: 'IndexPage'
 }
