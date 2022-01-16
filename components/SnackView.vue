@@ -27,13 +27,13 @@ export default {
 .underbar-choco::after {
     content: '';
     position: absolute;
-    top: 90%;
+    top: 80%;
     left: 0;
     width: 90%;
     height: 8px;
     border-radius: 4px;
     background: linear-gradient(to right, #240905 80%, #f2ba48 80%);
-    box-shadow: 0 3px 8px #0008;
+    box-shadow: 0 3px 8px #0008, 0 -3px 2px #0005 inset, 0 1px 2px #0001 inset;
 }
 
 .underbar-pink {
@@ -42,13 +42,13 @@ export default {
 .underbar-pink::after {
     content: '';
     position: absolute;
-    top: 103%;
-    left: 0;
-    width: 100%;
+    top: 120%;
+    left: -5%;
+    width: 110%;
     height: 8px;
     border-radius: 4px;
     background: linear-gradient(to left, #d98280 80%, #f2cc91 80%);
-    box-shadow: 0 3px 8px #0008;
+    box-shadow: 0 3px 8px #0008, 0 -3px 2px #0005 inset, 0 1px 2px #0001 inset;
 }
 
 </style>

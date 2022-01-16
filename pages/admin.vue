@@ -1,27 +1,62 @@
 <template>
     <div class="background-rd">
         <Header/>
-        <div class="submit m-16 mt-0">
-            <div class="left p-12 mx-16" >
-                <h1 class="mt-10 mt-0 font-black text-2xl">今週買ったお菓子</h1>
+        <nuxt-link to="/" class="admin-link ml-8">
+            <span class="edit-icon" style="display:inline-block; width:2rem; height:2rem;">
+                <img src="../assets/photo/round_keyboard_return_black_24dp.png" alt="" class="p-2" style="width: 2rem; height: 2rem;">
+            </span>
+            <span class="admin-link-text align-top pr-2 font-black">戻る</span>
+        </nuxt-link>
+        <div class="submit flex justify-center">
+            <div class="left ml-16" >
+                <h1 class="mt-10 font-black text-2xl">今週買ったお菓子</h1>
                 <h2 class="h2 mt-6"> 
-                    <input style="background: rgb(252 222 108)" type="text" autocomplete="on" v-model="snack_name" class="text-2xl font-black shadow-md rounded h21 pl-2 py-1 w-44" placeholder="入力"/>
-                    <button class="shadow-md ml-3 rounded-lg text-white bg-choco p-1" @click="postSnack()">追加</button>
+                    <input type="text" autocomplete="on" v-model="snack_name" class="shadow-md rounded-lg h21 pl-2 py-1 w-44" placeholder="入力"/>
+                    <button class="shadow-md ml-3 rounded-lg text-white bg-gray-400 p-1" @click="postSnack()">追加</button>
                 </h2>
+                <div class="added-snacks mt-8 ml-2">
+                    <div class="added-snacks-title font-black text-lg mb-2">
+                        登録済み
+                    </div>
+                    <div class="added-snacks-content font-black">
+                        <div class="added-snacks-container pl-4">
+                            <div class="added-snacks-element flex py-2">
+                                <div class="added-snacks-snack-name flex-1">
+                                    <span id="snack-name" class="snack-name ml-2">キットカット</span>
+                                    <img src="../assets/photo/round_done_black_24dp.png" alt="" class="p-2" style="width: 2rem; height: 2rem; display: inline;">
+                                </div>
+                            </div>
+                            <div class="added-snacks-element flex py-2">
+                                <div class="added-snacks-snack-name flex-1">
+                                    <span id="snack-name" class="snack-name ml-2">せんべい</span>
+                                    <img src="../assets/photo/round_done_black_24dp.png" alt="" class="p-2" style="width: 2rem; height: 2rem; display: inline;">
+                                </div>
+                            </div>
+                            <div class="added-snacks-element flex py-2">
+                                <div class="added-snacks-snack-name flex-1">
+                                    <span id="snack-name" class="snack-name ml-2">カントリーマアム</span>
+                                    <img src="../assets/photo/round_done_black_24dp.png" alt="" class="p-2" style="width: 2rem; height: 2rem; display: inline;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="right background-white rounded-lg py-5 px-5 shadow-md text-xl">
-                <div class="flex">
+            <div class="right background-white rounded-lg py-5 px-5 shadow-md text-xl ml-8 font-black">
+                <div class="flex titlesize">
                     <div class="border-b-2 border-gray-400 inline">当番表</div>
                     <div class="ml-5">今週の当番は</div>
                 </div>
                 <div class="m-7">
-                        <div class="ml-5">
-                        <div class="mb-3">１．イヌさん</div>
-                        <div class="mb-3">２．ハトさん</div>
-                        <div class="mb-3">３．ネコさん</div>
-                        <div class="mb-3">４．ドジョウさん</div>
-                        <div class="mb-3">５．ヤギさん</div>
-                        <div class="mb-3">６．フライゴンさん</div>
+                    <div class ="boardfont">
+                        <div class="ml-5 font-black">
+                            <div class="textbottom">１．イヌさん</div>
+                            <div class="textbottom">２．ハトさん</div>
+                            <div class="textbottom">３．ネコさん</div>
+                            <div class="textbottom">４．ドジョウさん</div>
+                            <div class="textbottom">５．ヤギさん</div>
+                            <div class="textbottom">６．フライゴンさん</div>
+                        </div>
                     </div>
                     <div class="text-center">
                         <button class="shadow-md bg-white rounded-full text-black mx-auto px-5" @click="show=true">編集</button>
@@ -60,6 +95,36 @@ export default{
 </script>
 
 <style>
+
+@media screen and ( max-width:674px){
+    .boardfont{
+        font-size: 10px !important;
+        transition: 1s;
+    }
+    .textbottom{
+        margin-bottom: 0em;
+        transition: 1s;
+    }
+    .titlesize{
+        font-size: 10px !important;
+        transition: 1s;
+    }
+}
+@media screen and (min-width:674px) {
+    .boardfont{
+        font-size: 16px !important;
+        transition: 1s;
+    }
+    .textbottom{
+        margin-bottom: 2em;
+        transition: 1s;
+    }
+    .titlesize{
+        font-size: 16px !important;
+        transition: 1s;
+    }
+}
+
 .right{
     width: 50%;
 }

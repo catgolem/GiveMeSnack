@@ -51,6 +51,8 @@ export default {
       Roboto: true,
       // a name with spaces
       'Josefin+Sans': true,
+
+      'Zen+Maru+Gothic' : true,
       // specific font weights
       Lato: [100, 300],
 
