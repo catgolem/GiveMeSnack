@@ -59,13 +59,7 @@
             width: 35% !important;
             transition:2s;
         }
-        .modal:hover{
-            position: absolute !important;
-            top: 255px !important;
-            left: 400px !important;
-            width: 35% !important;
-            transition: 2s;
-        }
+        
     }
     @media screen and (min-width:930px) {
         .small{
