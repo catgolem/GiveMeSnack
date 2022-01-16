@@ -11,8 +11,8 @@ module.exports = {
       },
       fontFamily: {
         'body' : ['Ubuntu'],
-        'text' : ['KosugiMaru'],
         'new' : ['HachiMaruPop'],
+        'text' : ['Zen+Maru+Gothic']
       },
     extend: {}
     

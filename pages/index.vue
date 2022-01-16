@@ -1,5 +1,5 @@
 <template>
-  <div class="home-background pb-12 font-new">
+  <div class="home-background pb-12">
     <Header/>
     <SnackView/>
     <Snack-data class="text-shadow-sm"/>

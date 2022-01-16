@@ -1,9 +1,17 @@
 <template>
-    <div class="shadow">
-        <header class="border-b-2 border-gray-400 py-2 text-black font-bold flex justify-between">
-          <h1 class="title pl-10">GiveMeSnack</h1>
-          <nav class="nav pr-10" v-if = this.work.situation >勤務中</nav>
-          <nav class="nav pr-10" v-else>休憩中</nav>
+    <div class="shadow mb-10 font-text">
+        <header class="py-8 font-bold flex justify-between">
+          <nuxt-link to="/">
+            <h1 class="title text-3xl pl-20">GiveMeSnack</h1>
+          </nuxt-link>
+          <nav class="nav work-mode text-2xl pr-20" v-if = this.work.situation >
+            <img src="../assets/photo/round_laptop_white_24dp.png" alt="" class="mode-icon">
+            勤務中
+          </nav>
+          <nav class="nav break-mode text-2xl pr-20" v-else>
+            <img src="../assets/photo/round_coffee_white_24dp.png" alt="" class="mode-icon">
+            休憩中
+          </nav>
         </header>
     </div>
 </template>
@@ -42,14 +50,31 @@ export default {
 </script>
 
 <style>
-.header {
+header {
   width: 100%;
-  background-color: white;
+  background-color: #573a2e;
+  color: white;
+}
+
+.mode-icon {
+  display: inline;
 }
  
 .menu-item {
   list-style: none;
   display: inline-block;
   padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 6vw !important;
+    padding-left: 10vw !important;
+  }
+
+  header nav {
+    font-size: 4vw !important;
+    padding-right: 10vw !important;
+  }
 }
 </style>

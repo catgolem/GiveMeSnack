@@ -1,5 +1,5 @@
 <template>
-    <div class="grow shrink mt-2 mb-6" style="flex-basis: 600px;">
+    <div class="grow shrink mt-2 mb-6" style="flex-basis: 500px;">
         <div class="flex mb-4">
             <div class="flex-1 text-2xl shadow bg-white text-center py-2 rounded-lg">snackname</div>
             <div class="flex-1 text-2xl py-2 pl-2 text-shadow-sm">平均</div>
