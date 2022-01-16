@@ -2,8 +2,8 @@
     <div class="modal">
         <div class="bg" @click="$emit('closeModal')" />
         <div class="bg-white rounded border-2 border-gray-300 mt-20">
-            <button @click="$emit('closeModal')" class="mr-30 locate"> 
-                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
+            <button @click="$emit('closeModal')" class="mr-30 locate p-3 rounded bg-glay"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
             </button>
             <div class="w-1/2 font-black mt-3 small">当番表の編集</div>
             <div class="ml-8 small">

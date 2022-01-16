@@ -27,7 +27,7 @@ export default {
 .underbar-choco::after {
     content: '';
     position: absolute;
-    top: 90%;
+    top: 80%;
     left: 0;
     width: 90%;
     height: 8px;
@@ -42,9 +42,9 @@ export default {
 .underbar-pink::after {
     content: '';
     position: absolute;
-    top: 103%;
-    left: 0;
-    width: 100%;
+    top: 120%;
+    left: -5%;
+    width: 110%;
     height: 8px;
     border-radius: 4px;
     background: linear-gradient(to left, #d98280 80%, #f2cc91 80%);
