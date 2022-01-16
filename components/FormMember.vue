@@ -59,6 +59,7 @@
             width: 35% !important;
             transition:1s;
         }
+
     }
     @media screen and (min-width:674px) {
         .small{
