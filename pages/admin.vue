@@ -128,9 +128,7 @@ export default{
 .right{
     width: 50%;
 }
-.left{
-    width: calc(100%-612px);
-}
+
 .h2{
     font-size: 1em;
 }
