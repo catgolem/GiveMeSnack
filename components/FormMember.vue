@@ -47,37 +47,30 @@
     }
 
     
-    @media screen and ( max-width:930px) {
+    @media screen and ( max-width:674px) {
         .small{
-            font-size: 7px !important;
-            transition:2s;
+            font-size: 6px !important;
+            transition:1s;
         }
         .modal{
             position: absolute !important;
-            top: 255px !important;
-            left: 400px !important;
+            top: 450px !important;
+            right: 18em !important;
             width: 35% !important;
-            transition:2s;
-        }
-        .modal:hover{
-            position: absolute !important;
-            top: 255px !important;
-            left: 400px !important;
-            width: 35% !important;
-            transition: 2s;
+            transition:1s;
         }
     }
-    @media screen and (min-width:930px) {
+    @media screen and (min-width:674px) {
         .small{
             font-size: 16px !important;
-            transition: 2s;
+            transition: 1s;
         }
         .modal{
             position: absolute !important;
-            top: 25px !important;
+            top: 100px !important;
             left: 40px !important;
             width: 35% !important;
-            transition: 2s;
+            transition: 1s;
         }
     }
     .border{
@@ -87,6 +80,7 @@
     .line{
         text-align: left;
     }
+    
     .large{
         border-radius: 5px;
         border: solid;

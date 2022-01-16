@@ -43,18 +43,20 @@
                 </div>
             </div>
             <div class="right background-white rounded-lg py-5 px-5 shadow-md text-xl ml-8">
-                <div class="flex">
+                <div class="flex titlesize">
                     <div class="border-b-2 border-gray-400 inline">当番表</div>
                     <div class="ml-5">今週の当番は</div>
                 </div>
                 <div class="m-7">
+                    <div class ="boardfont">
                         <div class="ml-5">
-                        <div class="mb-3">１．イヌさん</div>
-                        <div class="mb-3">２．ハトさん</div>
-                        <div class="mb-3">３．ネコさん</div>
-                        <div class="mb-3">４．ドジョウさん</div>
-                        <div class="mb-3">５．ヤギさん</div>
-                        <div class="mb-3">６．フライゴンさん</div>
+                            <div class="textbottom">１．イヌさん</div>
+                            <div class="textbottom">２．ハトさん</div>
+                            <div class="textbottom">３．ネコさん</div>
+                            <div class="textbottom">４．ドジョウさん</div>
+                            <div class="textbottom">５．ヤギさん</div>
+                            <div class="textbottom">６．フライゴンさん</div>
+                        </div>
                     </div>
                     <div class="text-center">
                         <button class="shadow-md bg-white rounded-full text-black mx-auto px-5" @click="show=true">編集</button>
@@ -93,6 +95,36 @@ export default{
 </script>
 
 <style>
+
+@media screen and ( max-width:674px){
+    .boardfont{
+        font-size: 10px !important;
+        transition: 1s;
+    }
+    .textbottom{
+        margin-bottom: 0em;
+        transition: 1s;
+    }
+    .titlesize{
+        font-size: 10px !important;
+        transition: 1s;
+    }
+}
+@media screen and (min-width:674px) {
+    .boardfont{
+        font-size: 16px !important;
+        transition: 1s;
+    }
+    .textbottom{
+        margin-bottom: 2em;
+        transition: 1s;
+    }
+    .titlesize{
+        font-size: 16px !important;
+        transition: 1s;
+    }
+}
+
 .right{
     width: 50%;
 }
