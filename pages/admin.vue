@@ -47,9 +47,9 @@
                     <div class="border-b-2 border-gray-400 inline">当番表</div>
                     <div class="ml-5">今週の当番は</div>
                 </div>
-                <div class="m-7">
+                <div class="m-4">
                     <div class ="boardfont">
-                        <div class="ml-5 font-black">
+                        <div class="ml-10 font-black">
                             <div class="textbottom">１．イヌさん</div>
                             <div class="textbottom">２．ハトさん</div>
                             <div class="textbottom">３．ネコさん</div>
@@ -96,7 +96,7 @@ export default{
 
 <style>
 
-@media screen and ( max-width:674px){
+@media screen and ( max-width:667px){
     .boardfont{
         font-size: 10px !important;
         transition: 1s;
@@ -110,7 +110,7 @@ export default{
         transition: 1s;
     }
 }
-@media screen and (min-width:674px) {
+@media screen and (min-width:667px) {
     .boardfont{
         font-size: 16px !important;
         transition: 1s;

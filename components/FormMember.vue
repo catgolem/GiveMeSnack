@@ -33,43 +33,34 @@
 <style>
     .locate{
         position: absolute !important;
-        top:95px !important;
-        left: 10px !important;
+        top:4em !important;
+        left: 1em !important;
     }
-    .small{
-            font-size: 5px;
-        }
-    .modal{
-        position: absolute !important;
-        top: 1px !important;
-        left: 1px !important;
-        width: 35% !important;
-    }
-
     
-    @media screen and ( max-width:674px) {
+    
+    @media screen and ( max-width:667px) {
         .small{
             font-size: 6px !important;
             transition:1s;
         }
         .modal{
             position: absolute !important;
-            top: 450px !important;
-            right: 18em !important;
-            width: 35% !important;
+            top: 28em !important;
+            right:56vw !important;
+            width: 240px !important;
             transition:1s;
         }
     }
-    @media screen and (min-width:674px) {
+    @media screen and (min-width:667px) {
         .small{
             font-size: 16px !important;
             transition: 1s;
         }
         .modal{
             position: absolute !important;
-            top: 100px !important;
-            left: 40px !important;
-            width: 35% !important;
+            top: 5em !important;
+            left: 2em !important;
+            width: 300px !important;
             transition: 1s;
         }
     }
