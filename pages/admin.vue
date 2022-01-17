@@ -1,5 +1,5 @@
 <template>
-    <div class="background-rd">
+    <div class="background-rd font-new">
         <Header/>
         <nuxt-link to="/" class="admin-link ml-8">
             <span class="edit-icon" style="display:inline-block; width:2rem; height:2rem;">

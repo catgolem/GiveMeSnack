@@ -53,16 +53,9 @@ export default {
       'Josefin+Sans': true,
 
       'Zen+Maru+Gothic' : true,
+
+      'Hachi+Maru+Pop' : true,
       // specific font weights
-      Lato: [100, 300],
-
-      Courgette: true,
-
-      Ubuntu: true,
-
-      KosugiMaru:true,
-
-      HachiMaruPop : true,
     }
   }
 }

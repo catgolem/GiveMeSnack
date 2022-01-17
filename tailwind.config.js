@@ -10,9 +10,7 @@ module.exports = {
         '8': '8px',
       },
       fontFamily: {
-        'body' : ['Ubuntu'],
-        'new' : ['HachiMaruPop'],
-        'text' : ['Zen+Maru+Gothic']
+        'new' : ['Hachi+Maru+Pop'],
       },
     extend: {}
     
