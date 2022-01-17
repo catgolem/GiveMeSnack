@@ -42,7 +42,7 @@
                     </div>
                 </div>
             </div>
-            <div class="right background-white rounded-lg py-5 px-5 shadow-md text-xl ml-8 font-black">
+            <div class="left background-white rounded-lg roleboard shadow-md text-xl ml-8 font-black">
                 <div class="flex titlesize">
                     <div class="border-b-2 border-gray-400 inline">当番表</div>
                     <div class="ml-5">今週の当番は</div>
@@ -109,6 +109,9 @@ export default{
         font-size: 10px !important;
         transition: 1s;
     }
+    .roleboard{
+        padding: 50px;
+    }
 }
 @media screen and (min-width:667px) {
     .boardfont{
@@ -123,13 +126,16 @@ export default{
         font-size: 16px !important;
         transition: 1s;
     }
+    .roleboard{
+        padding: 150px;
+    }
 }
 
 .right{
     width: 50%;
 }
 .left{
-    width: calc(100%-612px);
+    width: calc(50%-612px);
 }
 .h2{
     font-size: 1em;
