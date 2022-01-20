@@ -69,12 +69,12 @@ header {
 @media screen and (max-width: 600px) {
   header h1 {
     font-size: 6vw !important;
-    padding-left: 10vw !important;
+    margin-left: 10vw !important;
   }
 
   header nav {
     font-size: 4vw !important;
-    padding-right: 10vw !important;
+    margin-right: 10vw !important;
   }
 }
 
