@@ -1,6 +1,6 @@
 <template>
     <div class="relative w-9/12 m-auto rounded-lg pr-0 pt-6 pl-14 pb-28 shadow-xl" style="background: rgb(252 222 108)">
-        <div class="underbar-choco text-4xl p-8 pl-0 mb-4 text-shadow-sm"><img class="inline" src="../assets/photo/cookie.png">今日のお菓子</div>
+        <div class="underbar-choco text-4xl p-8 pl-0 mb-4 text-shadow-sm"><img class="inline" src="../assets/photo/cookie.png">今日のカントリーマアム</div>
         <div class="flex flex-wrap">
             <EvaluetionSnack></EvaluetionSnack>
             <EvaluetionSnack></EvaluetionSnack>
